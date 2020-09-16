@@ -4,8 +4,7 @@ import './style.css';
 import { RecordsResponse } from './types';
 import { formatDate } from './helpers';
 import Pagination from './Pagination';
-import {Link} from 'react-router-dom'
-
+import Filters from '../../components/Filters'
 const BASE_URL = 'http://localhost:8080'
 
 const Records = () => {
@@ -20,15 +19,11 @@ const Records = () => {
         axios.get(`${BASE_URL}/records?linesPerPage=12&page=${activePage}`)
             .then(response => setRecordsResponse(response.data))
     }, [activePage]);
-    
+
     return (
         <div className="page-container">
 
-            <div className="filters-container records-actions">
-                <Link to="/charts">
-                    <button className="action-filters">VER GRÁFICOS</button>
-                </Link>
-            </div>
+            <Filters link="/charts" linkText="VER GRÁFICO" />
             <table className="records-table" cellPadding="0" cellSpacing="0">
                 <thead>
                     <tr>
@@ -41,7 +36,7 @@ const Records = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {recordsResponse?.content.map(record =>(
+                    {recordsResponse?.content.map(record => (
                         <tr key={record.id}>
                             <td>{formatDate(record.moment)}</td>
                             <td>{record.name}</td>
@@ -54,10 +49,10 @@ const Records = () => {
                 </tbody>
             </table>
             <Pagination
-            activePage={activePage}
-            totalPages={recordsResponse?.totalPages}
-            goToPage={handlePageChange}
-            
+                activePage={activePage}
+                totalPages={recordsResponse?.totalPages}
+                goToPage={handlePageChange}
+
             />
         </div>
     )
