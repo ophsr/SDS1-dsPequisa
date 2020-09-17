@@ -11,7 +11,7 @@
 
 .home-text-title {
     font-size: 55px;
-    color: var(--color-turquoise);
+    color: var(--color-green);
 }
 
 .home-text-subtitle {
@@ -26,16 +26,16 @@
 }
 
 .home-btn {
-    background-color: var(--color-turquoise);
+    background-color: var(--color-green);
     border-radius: 10px 0px 0px 10px;
-    color: var(--color-black);
+    color: var(--color-dark-blue);
     font-weight: bold;
     font-size: 24px;
     padding: 20px 45px;
 }
 
 .home-btn:hover {
-    background-color: #04c7ef;
+    background-color: #01a725;
 }
 
 .home-btn-icon {

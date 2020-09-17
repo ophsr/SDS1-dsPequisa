@@ -11,14 +11,14 @@
 
 .records-table {
     width: 100%;
-    border-bottom: 10px solid var(--color-turquoise);
+    border-bottom: 10px solid var(--color-green);
     border-radius: 0 0 10px 10px;
 }
 
 .records-table thead {
-    background-color: var(--color-turquoise);
+    background-color: var(--color-green);
     text-align: left;
-    color: #0E1B28;
+    color: #000C35;
     border-radius: 10px;
 }
 
@@ -92,14 +92,14 @@
 }
 
 .filters-container .clean-filters:hover {
-    background-color: #e07243;
+    background-color: #d05e2d;
 }
 
 .filters-container .action-filters {
-    background-color: var(--color-turquoise);
+    background-color: var(--color-green);
     color: #0E1B28;
 }
 
 .filters-container .action-filters:hover {
-    background-color: #04c7ef;
+    background-color: #01a725;
 }

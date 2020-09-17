@@ -3,22 +3,21 @@ export const pieOptions = {
         background: "transparent",
         foreColor: "red",
     },
-    colors: ["#a8dadc", "#ed7947", "#00D4FF", "#ffd6a5"],
+    // colors: ["#a8dadc", "#ed7947", "#00D4FF", "#ffd6a5"],
     legend: {
         show: false,
     },
     tooltip: {
-        enabled: true,
+        enabled: false,
     },
     dataLabels: {
         enabled: true,
         offsetX: "100px",
         offsetY: "100px",
         style: {
-            colors: ["#a8dadc", "#ed7947", "#00D4FF", "#ffd6a5"],
-            fontSize: "20px",
+            fontSize: "22px",
             fontFamily: "Play, sans-serif",
-            fontWeight: 700,
+            fontWeight: 600,
         },
     },
     plotOptions: {
@@ -34,11 +33,20 @@ export const pieOptions = {
 
 export const barOptions = {
     chart: {
+        animations: {
+            enabled: true,
+            easing: 'easeinout',
+            speed: 3000,
+            dynamicAnimation: {
+                enabled: true,
+                speed: 350
+            }
+        },
         toolbar: {
             show: false,
         },
     },
-    colors: ["#ED7947"],
+    colors: ["#FF4D00"],
     grid: {
         show: false,
     },
@@ -52,6 +60,11 @@ export const barOptions = {
     },
     dataLabels: {
         enabled: true,
+        style: {
+            fontSize: "22px",
+            fontFamily: "Play, sans-serif",
+            fontWeight: 600,
+        },
     },
     tooltip: {
         enabled: false,
@@ -72,8 +85,8 @@ export const barOptions = {
             labels: {
                 maxWidth: 360,
                 style: {
-                    colors: "#00D4FF",
-                    fontSize: "18px",
+                    colors: "#00D02D",
+                    fontSize: "22px",
                     fontFamily: "Play, sans-serif",
                     fontWeight: 700,
                 },

@@ -13,7 +13,7 @@
 }
 
 .pagination-item.active {
-    background: var(--color-turquoise);
+    background: var(--color-green);
 }
 
 .pagination-item.inactive {
@@ -22,7 +22,7 @@
 }
 
 .pagination-item.active:hover {
-    background-color: #04c7ef;
+    background-color: #00b627
 }
 
 .pagination-item.inactive:hover {

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 :root {
-    --color-turquoise: #00D4FF;
-    --color-coral: #ed7947;
+    --color-green: #00D02D;
+    --color-coral: #FF4D00;
     --color-dimgray: #4c5d67;
-    --color-darkslategray: #37474f;
-    --color-black: #0b1f34;
+    --color-darkslategray: #2B363C;
+    --color-dark-blue: #000C35;
 }
 
 body,
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background: var(--color-black);
+    background: var(--color-dark-blue);
 }
 
 a {
@@ -26,7 +26,7 @@ a {
 }
 
 .text-primary {
-    color: var(--color-turquoise);
+    color: var(--color-green);
 }
 
 .text-secondary {

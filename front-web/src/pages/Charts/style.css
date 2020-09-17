@@ -3,7 +3,7 @@
 }
 
 .top-related {
-    background-color: var(--color-dimgray);
+    background-color: var(--color-darkslategray);
     padding-top: 30px;
     padding-left: 70px;
     border-radius: 10px;
@@ -31,7 +31,7 @@
 
 .game-title {
     font-size: 24px;
-    color: var(--color-turquoise);
+    color: var(--color-green);
     margin-right: 40px;
     width: 400px;
     text-align: right;
@@ -59,7 +59,7 @@
     padding-left: 25px;
     height: 373px;
     margin-bottom: 25px;
-    background-color: var(--color-dimgray);
+    background-color: var(--color-darkslategray);
     border-radius: 10px;
 }
 
@@ -67,6 +67,6 @@
     padding-top: 15px;
     padding-left: 25px;
     height: 373px;
-    background-color: var(--color-dimgray);
+    background-color: var(--color-darkslategray);
     border-radius: 10px;
 }
