@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { AppLoading } from 'expo';
 import {
   useFonts,
@@ -8,8 +8,7 @@ import {
   Play_700Bold
 } from '@expo-google-fonts/play';
 
-import Header from './src/components/Header';
-import Home from './src/pages/Home';
+import Routes from './src/routes'
 
 
 
@@ -23,8 +22,7 @@ export default function App() {
   }
   return (
     <View  style={styles.container}>
-      <Header />
-      <Home />
+      <Routes />
       <StatusBar style="light" />
     </View>
   );
@@ -33,6 +31,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000C35'
   },
 });
