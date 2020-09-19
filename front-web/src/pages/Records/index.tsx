@@ -4,7 +4,7 @@ import './style.css';
 import { RecordsResponse } from './types';
 import { formatDate } from './helpers';
 import Pagination from './Pagination';
-import Filters from '../../components/Filters'
+import Filters from '../../components/filters'
 
 const BASE_URL = 'https://sds-1-pedro.herokuapp.com';
 

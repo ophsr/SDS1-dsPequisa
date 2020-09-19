@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Filters from '../../components/Filters';
+import Filters from '../../components/filters';
 import './style.css';
 import { barOptions, pieOptions } from './charts-options';
 import Chart from 'react-apexcharts';
